@@ -1,0 +1,108 @@
+1)
+Given the points obtained in N rounds, the program must print the maximum sum of points obtained in any of the winning streak sequence.
+
+Input Format:
+The first line contains N.
+The second line contains the points P(i), i=1 to N with the points separated by a space.
+
+Output Format:
+The first line contains M which represents the maximum number of points obtained in any of the winning sequence.
+
+Boundary Conditions:
+3 <= N <= 100
+-100 <= P(i) <= 100
+
+Example Input/Output 1:
+Input:
+7
+9 2 3 -1 1 2 4
+
+Output:
+14
+
+Example Input/Output 2:
+Input:
+15
+11 20 6 7 -4 2 -5 15 8 3 16 8 3 -1 -2
+
+Output:
+53
+
+
+
+2)
+A king was happy with the skills of a poet and hence wanted to reward him. The king placed N boxes in a straight line each with certain number of gold coins - C(1) .... C(N) in it.
+The poet can pick any number of boxes but if the poet selected any box, then he should not pick the boxes which are adjacent to it (either to it's left or right). The poet also cannot rearrange the boxes.
+
+Given N and the coins C(i) (where i= 1 to N) in each of the boxes, find the maximum gold coins M, the poet can earn as his reward by picking the boxes.
+
+Input Format:
+The first line contains N.
+The second line contains N positive integers representing the gold coins in each of the boxes 1 to N.
+
+Output Format:
+The first line contains M which represents the maximum number of gold coins the poet can earn as reward.
+
+Boundary Conditions:
+3 <= N <= 999999
+1 <= C(i) <= 100
+
+Example Input/Output 1:
+Input:
+4
+5 3 11 20
+
+Output:
+25
+
+Example Input/Output 2:
+Input:
+7
+10 20 15 1 9 12 5
+
+Output:
+39
+
+
+3)
+A M*N matrix having M rows and N columns contains + or - as it's cell values. A set of semi-colon separated words is also passed as input.
+The cells with + are not to be touched. The words must be filled in the cells with - values.
+
+Input Format:
+The first line will contain the value of M and N, each separated by a space.
+The next M lines will contain N characters (each of these characters will be + or -).
+The last (M+2)th line will contain the words to be filled separated by a semi-colon.
+
+Output Format:
+M lines with the words filled in the matrix.
+
+Constraints:
+10 <= M, N <= 20
+
+Example Input/Output 1:
+Input:
+10 10
++-++++++++
++-++++++++
++-------++
++-++++++++
++-++++++++
++------+++
++-+++-++++
++++++-++++
++++++-++++
+++++++++++
+AGRA;NORWAY;ENGLAND;GWALIOR
+
+Output:
++E++++++++
++N++++++++
++GWALIOR++
++L++++++++
++A++++++++
++NORWAY+++
++D+++G++++
++++++R++++
++++++A++++
+++++++++++
+
